@@ -69,14 +69,9 @@ var utmParamQueryString = '',
 
 				if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
 					window.location.href = iosApp;
-					// window.setTimeout(function () {
-						//window.location.href = https + mobileFallback + utmParamQueryString;
-					//}, 3000);
+					
 				} else if (/Android/i.test(navigator.userAgent)) {
 					window.location.href = androidApp;
-					//window.setTimeout(function () {
-						//window.location.href = https + mobileFallback + utmParamQueryString;
-					//}, 25);
 				} else {
 					window.location.href = itmss + desktopFallback + utmParamQueryString;
 				        window.setTimeout(function () {
